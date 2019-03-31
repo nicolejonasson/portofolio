@@ -1,0 +1,68 @@
+
+
+
+
+@font-face {
+font-family: 'enterprise';
+src: url("font/enter.enterGX.ttf") format("truetype-variations");
+}
+
+:root {
+  --variation: 100;
+  --size:50px;
+  /* @reasonCode green */
+}
+
+html {
+    background: radial-gradient(rgb(200, 200, 200), white, rgb(200, 200, 200)); */
+    margin: 0;
+    /* font-family:"enterprise"; */
+    /* font-size: var(--size); */
+    /* line-height: 1; */
+    font-variation-settings: 'wdth' var(--variation);
+}
+input{
+  width: 50%;
+}
+#variable{
+  width: 200px;
+   text-align: center;
+ }
+ #size{
+   width: 200px;
+    text-align: center;
+  }
+
+.box{
+  color: orange;
+  background:none;
+  height: auto;
+  width: 100%;
+  font-family:"enterprise";
+  font-size: var(--size);
+  padding: 0px;
+  margin-left: 10px;
+  text-align: center;
+  vertical-align: top;
+  line-height: auto;
+  border-style:none;
+}
+
+/* #box1{
+    font-size:50px;
+}
+
+#box2{
+    font-size: 70px;
+}
+
+#box3{
+    font-size: 100px;
+}
+#box4{
+    font-size: 130px;
+}
+
+#box5{
+    font-size: 170px;
+} */

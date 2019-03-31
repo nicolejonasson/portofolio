@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!-- <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+ -->
+
+  </head>
+
+  <body>
+
+    <input type="range" id="variable" min="100" max="500" value="0">
+    <input type="range" id="size" min="50" max="250" value="0">
+
+    <input type="text" class="box" id="box1" value="Klub enterprise"><br>
+    <input type="text" class="box" id="box2" value="-a project or undertaking,"><br>
+    <input type="text" class="box" id="box3" value="especially a bold"><br>
+    <input type="text" class="box" id="box4" value="or complex one."><br>
+    <!-- <input type="text" class="box" id="box5" value="KLUB ENTERPRISE"><br> -->
+
+
+
+      <!-- <div class="anim1"> Hej Trolle ?! </div>
+      <div class="anim2"> Klub Enterprise </div>
+      <div class="anim3"> klub enterprise </div>
+
+ -->
+
+    <script>
+    const footer = document.querySelector('html');
+    const variable = [].slice.call(document.querySelectorAll('#variable'));
+
+    const size = [].slice.call(document.querySelectorAll('#size'));
+
+    variable.forEach(input => input.addEventListener('change', handleUpdate));
+    variable.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+    size.forEach(input => input.addEventListener('change', sizeUpdate));
+    size.forEach(input => input.addEventListener('mousemove', sizeUpdate));
+
+    function handleUpdate(e) {
+        footer.style.setProperty('--variation', this.value)
+      }
+
+    function sizeUpdate(e){
+      footer.style.setProperty(('--size'), this.value + "px")
+    }
+
+
+    </script>
+
+  </body>
+</html>
